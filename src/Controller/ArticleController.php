@@ -17,11 +17,11 @@ class ArticleController extends AbstractController
 {
 
     /**
-     * @Route("/")
+     * @Route("/" , name="app_homepage")
      *
      */
     public function homepage(){
-        return new Response('My First symfony page');
+        return $this->render('article/homepage.html.twig');
     }
 
     /**
